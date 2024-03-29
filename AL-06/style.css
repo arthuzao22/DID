@@ -1,0 +1,79 @@
+/*  Site de Vendas */
+
+/* Objetivo: Criar uma plataforma online para vende produtos de forma eficiente e atraente para os clientes. 
+
+análoga
+
+*/ 
+
+/* Justificativas das cores baseadas na teoria das cores:
+   - Azul principal (#3498db): Usado para elementos de destaque, como o cabeçalho e botões de chamada para ação. O azul transmite confiança e segurança, ideal para um site de vendas.
+   - Cinza escuro (#2c3e50): Usado para fundos de elementos secundários, fornecendo contraste e destacando o conteúdo principal. O cinza escuro é neutro e permite que outras cores se destaquem.
+   - Cinza claro (#ecf0f1): Usado como cor de fundo geral para criar uma sensação de espaço e limpeza. O cinza claro é suave aos olhos e torna o texto legível.
+   - Verde (#2ecc71): Usado para indicar sucesso, como botões de compra concluída ou destaque para promoções. O verde é associado à natureza e à positividade, evocando uma sensação de confiança e frescor.
+*/
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1; 
+    color: #2c3e50; 
+}
+
+header {
+    background-color: #3498db; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.products {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; 
+    margin-bottom: 20px;
+    flex: 1; 
+    max-width: 300px; 
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #3498db; 
+    color: #fff; 
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.layout{
+    height: 100vh;
+    display: grid;
+}
+
+.header, .menu, .hero, .main{
+    color: #FFF;
+}
+
+.header{
+    background-color: #0f1629;
+    grid-area: header;
+}
+
+.menu{
+    background-color: #ef3d4d;
+    grid-area: menu;
+}
+
+.hero{
+    background-color: #4c86c6;
+    grid-area: hero;
+}
+
+.main{
+    background-color: #24344b;
+    grid-area: main;
+}
+
+.banner{
+    background-color: #fdd068;
+    grid-area: banner;
+}
+
+.extra{
+    background-color: #4dbd97;
+    grid-area: extra;
+}
+
+.image{
+    background-color: #c1e4e6;
+    grid-area: image;
+}
+
+.layout{
+    grid-template-rows: repeat(2,1fr) repeat(2,3fr) repeat(3, 2fr);
+    grid-template-areas: 
+    "header"
+    "menu"
+    "hero"
+    "main"
+    "banner"
+    "extra"
+    "image";
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .layout{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 4fr 4fr 2fr 2fr;
+        grid-template-areas: 
+        "header header header"
+        "hero hero hero"
+        "menu main main"
+        "menu banner banner"
+        "menu extra image";
+    }
+}
